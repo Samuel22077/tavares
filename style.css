@@ -59,257 +59,34 @@ a {
 .botoes-download {
     display: flex;
     justify-content: center;
-    gap: 18px;
+    gap: 20px;
 }
 
-.botao-img {
-    height: 56px;
-    display: block;
-}
-
-/* TEXTO CENTRAL */
-.secao-texto {
-    padding-bottom: 80px;
-}
-
-.texto-central {
-    text-align: center;
-}
-
-.texto-central h2 {
-    font-size: 42px;
-    margin-bottom: 18px;
-    color: #4c545d;
-}
-
-.texto-central p {
-    width: 760px;
-    max-width: 92%;
-    margin: 0 auto;
-    font-size: 20px;
-    line-height: 1.7;
-    color: #9aa1a9;
-}
-
-.espacamento-grande {
-    padding-top: 80px;
-}
-
-/* MONITOR */
-.secao-monitor {
-    padding-bottom: 110px;
-}
-
-.bloco-monitor {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 80px;
-}
-
-.lado-imagem {
-    width: 58%;
-}
-
-.img-monitor {
-    width: 100%;
-    display: block;
-}
-
-.lado-texto {
-    width: 32%;
-    display: flex;
-    flex-direction: column;
-    gap: 46px;
-}
-
-.item-texto h3 {
-    font-size: 30px;
-    margin-bottom: 12px;
-    color: #4c545d;
-}
-
-.item-texto p {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #9aa1a9;
-}
-
-/* DISPOSITIVOS */
-.secao-dispositivos {
-    padding-bottom: 90px;
-}
-
-.dispositivos-central {
-    text-align: center;
-}
-
-.img-dispositivos {
-    width: 760px;
-    max-width: 100%;
-    display: inline-block;
-}
-
-/* RECURSOS */
-.secao-recursos {
-    padding-bottom: 120px;
-}
-
-.recursos {
-    display: flex;
-    justify-content: space-between;
-    gap: 36px;
-    text-align: center;
-}
-
-.recurso {
-    width: 32%;
-}
-
-.icone-recurso {
-    height: 40px;
-    display: block;
-    margin: 0 auto 34px auto;
-}
-
-.recurso h3 {
-    font-size: 32px;
-    margin-bottom: 18px;
-    color: #4c545d;
-}
-
-.recurso p {
-    font-size: 17px;
-    line-height: 1.8;
-    color: #9aa1a9;
-}
-
-/* LOGOS */
-.secao-logos {
-    padding-bottom: 110px;
-}
-
-.logos-clientes {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-}
-
-.logos-clientes img {
-    max-height: 42px;
-    max-width: 170px;
-    object-fit: contain;
-}
-
-/* FINAL */
-.secao-final {
-    padding-bottom: 110px;
-}
-
-/* RODAPÉ */
-.rodape {
-    background-color: #eef1f4;
-    padding: 34px 0;
-}
-
-.rodape-conteudo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo-rodape {
-    width: 56px;
-    display: block;
-}
-
-.links-rodape {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 22px 46px;
-    color: #4c545d;
-    font-size: 18px;
-}
-
-.redes-sociais {
-    display: flex;
-    align-items: center;
-    gap: 22px;
-}
-
-.redes-sociais img {
-    width: 22px;
-    height: 22px;
-    display: block;
-}
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #f8f8f8;
-    font-family: Arial, sans-serif;
-    color: #4c545d;
-}
-
-a {
+.botao {
+    padding: 15px 32px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
     text-decoration: none;
-    color: inherit;
+    display: inline-block;
+    transition: 0.2s;
 }
 
-/* CONTAINER */
-.container {
-    width: 1120px;
-    max-width: 92%;
-    margin: 0 auto;
+/* botão verde */
+.ios {
+    background-color: #26bba4;
 }
 
-/* HERO */
-.hero {
-    padding-top: 60px;
-    padding-bottom: 120px;
-    background-color: #f8f8f8;
+/* botão azul */
+.mac {
+    background-color: #6174ff;
 }
 
-.hero-conteudo {
-    text-align: center;
-}
-
-.logo-topo {
-    width: 110px;
-    display: block;
-    margin: 0 auto 42px auto;
-}
-
-.titulo-principal {
-    font-size: 58px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #4c545d;
-}
-
-.subtitulo-principal {
-    width: 760px;
-    max-width: 90%;
-    margin: 0 auto 42px auto;
-    font-size: 22px;
-    line-height: 1.6;
-    color: #9aa1a9;
-}
-
-.botoes-download {
-    display: flex;
-    justify-content: center;
-    gap: 18px;
-}
-
-.botao-img {
-    height: 56px;
-    display: block;
+/* efeito hover (fica profissional) */
+.botao:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
 }
 
 /* TEXTO CENTRAL */
@@ -493,7 +270,7 @@ a {
     padding-top: 140px;
     padding-bottom: 140px;
 
-    background-image: url("bg-header-desktop.png");
+    background-image: url("imagens/bg-header-desktop.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: top center;
